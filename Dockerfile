@@ -4,4 +4,4 @@ COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
 RUN ./mvnw dependency:resolve
 COPY src ./src
-CM ["./mvnw" , "sprint-boot:run"]
+CMD ["./mvnw" , "sprint-boot:run"]
